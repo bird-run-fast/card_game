@@ -1,0 +1,100 @@
+/* リセットＣＳＳ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #6c6b6b;
+}
+
+/* floatの解除用 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* title画面用 */
+header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+header .headline {
+  font-size: 40px;
+  font-style: oblique;
+}
+
+.nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  width: 100px;
+  margin: 5px;
+  padding: 5px 0;
+}
+
+/* ゲーム画面 */
+.gameTable {
+  margin: 0 auto;
+  width: 900px;
+  height: 1000px;
+}
+
+.card-box {
+  width: 100px;
+  height: 150px;
+  margin: 30px;
+  display: inline-block;
+}
+
+.ura {
+  background-image: url("../img/sample.png");
+  background-size: cover;
+}
+
+.mouseover {
+  border: 1px solid;
+}
+
+.card-box p {
+  visibility: hidden;
+  font-size: 40px;
+  padding: 30px 40px;
+}
+
+.show {
+  /* pointer-eventsがnoneに設定されてるとその要素をクリックできない */
+  pointer-events: none;
+}
+
+.click-cancel {
+  /* pointer-eventsがnoneに設定されてるとその要素をクリックできない */
+  pointer-events: none;
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);  /* 背景を半透明にする */
+  display: none;  /* HTML要素を非表示にする */
+  z-index: 1  /* この値（スタックレベル）あげるほどウィンドウが前面に来る　*/
+ }
+
+#modalWindow {
+  width: 350px;
+  height: 150px;
+  position: fixed;
+  border: 2px solid #D04255;
+  background-color: #FFF;
+  display: none;
+  z-index: 2  /* 「オーバーレのHTML要素」よりもスタックレベルを高くする */
+}

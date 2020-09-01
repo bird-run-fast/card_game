@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>神経衰弱ゲーム</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <main calss="clearfix">
+      <header>
+        <h1 class="headline">しんけいすいじゃく</h1>
+        <!-- クリア画面の部分。overlay,modalWindowのidを用意し最初はCSSで非表示に設定 -->
+        <!-- 全部のペアがそろったら、このクリア画面を表示させる -->
+        <div id="overlay"></div>
+        <div id="modalWindow">
+          <br>
+          <h1>くりあ</h1>
+          <br>
+          <a href="index.html"><button>ホームへ</button></a>
+        </div>
+        <!-- ここまでクリア画面 -->
+      </header>
+      <section class="gameTable">
+        <div class="card-box clearfix ura"></div>
+        <div class="card-box clearfix ura"></div>
+        <div class="card-box clearfix ura"></div>
+        <div class="card-box clearfix ura"></div>
+        <div class="card-box clearfix ura"></div>
+        <div class="card-box clearfix ura"></div>
+        <div class="card-box clearfix ura"></div>
+        <div class="card-box clearfix ura"></div>
+        <div class="card-box clearfix ura"></div>
+        <div class="card-box clearfix ura"></div>
+      </section>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
